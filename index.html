@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOESCOLA EVOLUÇÃO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/EvolucaoLogoScreen.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--
+    <div class="welcome-popup" id="welcome-popup" aria-hidden="true">
+        <div class="welcome-popup__backdrop" data-popup-close></div>
+        <section class="welcome-popup__content" role="dialog" aria-modal="true" aria-labelledby="welcome-popup-title">
+            <button class="welcome-popup__close" type="button" aria-label="Fechar aviso" data-popup-close>
+                <i class="fas fa-xmark"></i>
+            </button>
+            <span class="welcome-popup__eyebrow"><i class="fas fa-car-side"></i> Autoescola Evolução</span>
+            <h1 id="welcome-popup-title">Sua CNH começa aqui.</h1>
+            <p>Fale com a nossa equipe e descubra o pacote ideal para você começar a dirigir com segurança.</p>
+            <button class="welcome-popup__cta whatsapp-btn" type="button">
+                <i class="fab fa-whatsapp"></i>
+                Quero mais informações
+            </button>
+            <button class="welcome-popup__dismiss" type="button" data-popup-close>Agora não, obrigado</button>
+        </section>
+    </div>
+    -->
+    <div class="welcome-popup category-d-popup" id="category-d-popup" aria-hidden="true">
+        <div class="welcome-popup__backdrop" data-category-popup-close></div>
+        <section class="welcome-popup__content" role="dialog" aria-modal="true" aria-labelledby="category-d-popup-title">
+            <button class="welcome-popup__close" type="button" aria-label="Fechar anúncio da Categoria D" data-category-popup-close>
+                <i class="fas fa-xmark"></i>
+            </button>
+            <span class="welcome-popup__eyebrow"><i class="fas fa-sparkles"></i> Novidade na Evolução</span>
+            <div class="category-d-popup__icon"><i class="fas fa-bus"></i></div>
+            <h1 id="category-d-popup-title">Agora temos Categoria D!</h1>
+            <p>Prepare-se para conduzir veículos de transporte de passageiros com acompanhamento completo e instrutores preparados.</p>
+            <div class="category-d-popup__highlights" aria-label="Diferenciais da Categoria D">
+                <span><i class="fas fa-check"></i> Aulas práticas</span>
+                <span><i class="fas fa-check"></i> Suporte em cada etapa</span>
+                <span><i class="fas fa-check"></i> Direção segura</span>
+            </div>
+            <button class="welcome-popup__cta" id="category-d-popup-cta" type="button">
+                Conhecer a Categoria D <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="welcome-popup__dismiss" type="button" data-category-popup-close>Fechar anúncio</button>
+        </section>
+    </div>
+    <nav id="navbar">
+        <a href="./index.html">
+            <img id="logo" src="./img/EvolucaoLogoScreen.png">
+        </a>
+        <div id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#pacotes">Pacotes</a>
+            <a href="#contato">Contato</a>
+            <div id="menu-icons">
+                <a href="https://api.whatsapp.com/send?phone=5519989132598&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20adquirir%20a%20minha%20CNH!" id="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com/autoescola.evolucao">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@autoescola.evolucao01">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.google.com.br/maps/place/Auto+escola+Evolu%C3%A7%C3%A3o/@-22.8842371,-47.0352054,767m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94c8cf10a120af71:0xcc6958116545f336!8m2!3d-22.8842371!4d-47.0326305!16s%2Fg%2F11zhnkxrqr?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D">
+                    <i class="fas fa-location-dot"></i>
+                </a>
+            </div>
+            <button id="botao-menu">Matricula</button>
+        </div>
+        <div id="icons">
+            <a href="https://api.whatsapp.com/send?phone=5519989132598&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20adquirir%20a%20minha%20CNH!" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/autoescola.evolucao">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@autoescola.evolucao01">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.google.com.br/maps/place/Auto+escola+Evolu%C3%A7%C3%A3o/@-22.8842371,-47.0352054,767m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94c8cf10a120af71:0xcc6958116545f336!8m2!3d-22.8842371!4d-47.0326305!16s%2Fg%2F11zhnkxrqr?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D">
+                <i class="fas fa-location-dot"></i>
+            </a>
+        </div>
+        <button id="botao">Matricula</button>
+        <div id="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <section class="fisrt" id="inicio">
+        <div class="video-fullscreen-wrap">
+            <video class="video-vertical" autoplay loop muted playsinline>
+                <source src="./img/Video Project.mp4" type="video/mp4">
+            </video>
+
+            <div id="video-overlay">
+                <h1>Você não está sozinho!</h1>
+                <h2>Conte com a gente para conquistar a sua CNH.</h2>
+            </div>
+        </div>
+    </section>
+    <section class="history">
+        <div class="textinho">
+            <h1 class="history-title">QUEM NÓS SOMOS</h1>
+            <div class="history-journey" aria-label="Resumo da história da Autoescola Evolução">
+                <div class="journey-steps">
+                    <button class="journey-step active" type="button" data-story="sonho">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Sonho</span>
+                    </button>
+                    <button class="journey-step" type="button" data-story="experiencia">
+                        <i class="fas fa-road"></i>
+                        <span>Experiência</span>
+                    </button>
+                    <button class="journey-step" type="button" data-story="suporte">
+                        <i class="fas fa-handshake"></i>
+                        <span>Suporte</span>
+                    </button>
+                </div>
+                <div class="journey-card">
+                    <strong id="journey-title">Um sonho que virou autoescola</strong>
+                    <span id="journey-text">A Evolução nasceu da vontade de ensinar direção com mais proximidade, cuidado e propósito.</span>
+                </div>
+            </div>
+            <p class="history-summary">A Autoescola Evolução Campinas nasceu de um sonho: ensinar direção com cuidado, proximidade e suporte real em cada etapa da sua CNH.</p>
+            <div class="history-text" id="historyText">
+                <p>Tudo começou com um instrutor apaixonado pelo que faz, que durante muitos anos atuou em outras autoescolas, formando alunos e adquirindo experiência prática no ensino de direção. Com o tempo, surgiu o desejo de ir além: oferecer um atendimento mais humano, próximo e realmente diferenciado.
+                Foi então que decidiu sair da CLT e iniciar um novo caminho, trabalhando com aperfeiçoamento de condutores já habilitados. Esse foi o primeiro passo de uma jornada que, com dedicação e esforço, resultou na criação da Auto Escola Evolução.</p>
+                <p>Hoje, somos uma empresa familiar, construída com muito compromisso, amor pela profissão e respeito por cada aluno. Mais do que formar condutores, buscamos proporcionar uma experiência única, com um atendimento personalizado desde o primeiro contato até a conclusão do processo de habilitação.
+                Sabemos que tirar a CNH pode ser um processo burocrático e, muitas vezes, complicado por envolver órgãos governamentais. Por isso, nossa missão é simplificar cada etapa, oferecendo suporte completo, orientação clara e toda a atenção necessária para tornar esse sonho mais acessível, rápido e tranquilo.
+                Aqui, cada aluno é tratado de forma especial, porque acreditamos que aprender a dirigir vai muito além de obter uma habilitação — é conquistar liberdade, segurança e novas oportunidades.</p>
+            </div>
+            <button class="history-toggle" type="button" aria-expanded="false" aria-controls="historyText">
+                Ler história completa
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+    <section class="second" id="pacotes">
+        <div class="pacotes" id="a">
+            <span class="package-kicker"><i class="fas fa-motorcycle"></i> Moto</span>
+            <h1>CATEGORIA A</h1>
+            <h3>Especialização completa para quem deseja pilotar motos com segurança.</h3>
+            <h3>Aulas práticas em motos confortáveis e revisadas.</h3>
+            <h3>Instrutores credenciados e preparados.</h3>
+            <h3>Suporte durante todas as etapas do processo de habilitação.</h3>
+            <h3>Melhor preço de Campinas.</h3>
+            <button class="cat"><i class="fas fa-arrow-down"></i> Mais informações</button>
+        </div>
+        <div class="pacotes" id="b">
+            <span class="package-kicker"><i class="fas fa-car"></i> Carro</span>
+            <h1>CATEGORIA B</h1>
+            <h3>Formação completa para carros e veículos de pequeno porte.</h3>
+            <h3>Garagem com diferentes modelos de veículos com disponibilidade de carros manuais e automáticos.</h3>
+            <h3>Aulas focadas em direção segura e situações reais do trânsito.</h3>
+            <h3>Instrutores credenciados, treinados e pacientes.</h3>
+            <h3>Aula e prova no mesmo veículo para maior confiança.</h3>
+            <button class="cat"><i class="fas fa-arrow-down"></i> Mais informações</button>
+        </div>
+        <div class="pacotes" id="a-b">
+            <span class="package-kicker"><i class="fas fa-car-side"></i><i class="fas fa-motorcycle"></i> Mais escolhido</span>
+            <h1>CATEGORIA A/B</h1>
+            <h3>Formação completa para moto e carro em um único pacote.</h3>
+            <h3>Aulas práticas com motos e carros modernos e revisados.</h3>
+            <h3>Instrutores credenciados, pacientes e preparados para te acompanhar.</h3>
+            <h3>Parcelamento facilitado e excelente custo-benefício.</h3>
+            <h3>Melhor preço de Campinas e região.</h3>
+            <button class="cat"><i class="fas fa-arrow-down"></i> Mais informações</button>
+        </div>
+        <div class="pacotes" id="d">
+            <span class="package-kicker"><i class="fas fa-bus"></i> Veículos de passageiros</span>
+            <h1>CATEGORIA D</h1>
+            <h3>Preparação para conduzir veículos de transporte de passageiros.</h3>
+            <h3>Aulas práticas em veículos adequados à categoria, modernos e revisados.</h3>
+            <h3>Treinamento focado em direção segura.</h3>
+            <button class="cat"><i class="fas fa-arrow-down"></i> Mais informações</button>
+        </div>
+        <div class="pacotes" id="more_class">
+            <span class="package-kicker"><i class="fas fa-road"></i> Confian&ccedil;a ao volante</span>
+            <h1>AULAS P/ RECÉM HABILITADOS</h1>
+            <h3>Aulas complementares para motoristas que desejam ganhar mais prática e confiança.</h3>
+            <h3>Treinamento personalizado de acordo com sua dificuldade.</h3>
+            <h3>Aulas em trânsito real para aperfeiçoamento completo.</h3>
+            <h3>Técnicas de estacionamento, baliza e direção em avenidas.</h3>
+            <h3>Instrutores experientes e preparados para ensinar com calma.</h3>
+            <h3>Ideal para quem sente insegurança após tirar a CNH.</h3>
+            <h3>Flexibilidade de horários para melhor atender sua rotina.</h3>
+            <h3>Melhor preço de Campinas e região.</h3>
+            <button class="cat"><i class="fas fa-arrow-down"></i> Mais informações</button>
+        </div>
+        <div class="pacotes" id="reciclagem">
+            <span class="package-kicker"><i class="fas fa-rotate"></i> Regulariza&ccedil;&atilde;o</span>
+            <h1>RECICLAGEM</h1>
+            <h3>Reabilitação completa para condutores com CNH suspensa ou cassada.</h3>
+            <h3>Aulas atualizadas com foco em direção consciente e segura.</h3>
+            <h3>Instrutores credenciados e treinados para orientação personalizada.</h3>
+            <h3>Atendimento completo durante todo o processo de regularização.</h3>
+            <h3>Explicações claras sobre legislação e boas práticas no trânsito.</h3>
+            <h3>Suporte para recuperar sua confiança ao dirigir.</h3>
+            <h3>Processo simplificado e acompanhamento individual.</h3>
+            <h3>Melhor preço de Campinas e região.</h3>
+            <button class="cat"><i class="fas fa-arrow-down"></i> Mais informações</button>
+        </div>
+    </section>
+    <section class="sixth" id="contato">
+        <div class="sixth-content">
+            <div class="contatos">
+                <h1>FALE CONOSCO</h1>
+                <div id="contact">
+                    <a href="https://api.whatsapp.com/send?phone=5519989132598&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20adquirir%20a%20minha%20CNH!" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/autoescola.evolucao" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@autoescola.evolucao01" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.google.com.br/maps/place/Auto+escola+Evolu%C3%A7%C3%A3o/@-22.8842371,-47.0352054,767m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94c8cf10a120af71:0xcc6958116545f336!8m2!3d-22.8842371!4d-47.0326305!16s%2Fg%2F11zhnkxrqr?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" aria-label="Localização">
+                        <i class="fas fa-location-dot"></i>
+                    </a>
+                </div>
+                <p>Para você obter mais informações, esteja conectado nas nossas redes sociais ou venha nos visitar.</p>
+            </div>
+            <form class="cadastro" action="#">
+                <h1>CADASTRE-SE</h1>
+                <label for="cadastro-email">NOME</label>
+                <input type="text" id="cadastro-email" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
+                <label for="cadastro-numero">NÚMERO</label>
+                <input type="tel" id="cadastro-numero" name="numero" placeholder="Informe seu número de whatsapp" autocomplete="tel" inputmode="tel" required>
+                <span class="cadastro-error" id="cadastro-error" aria-live="polite"></span>
+                <button class="whatsapp-btn signup-submit" type="button">Cadastrar-se</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="fourth">
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-1c839493-dfd0-464d-8c75-2876d1ff7109" data-elfsight-app-lazy></div>
+    </section>
+
+    <section class="enrollment-cta" aria-label="Chamada para matrícula">
+        <div class="enrollment-cta-content">
+            <div class="enrollment-cta-text">
+                <span class="enrollment-cta-kicker">Sua CNH começa aqui</span>
+                <h1>Pronto para dar o primeiro passo?</h1>
+                <p>Fale com a Autoescola Evolução e receba orientação para escolher o melhor caminho para sua matrícula.</p>
+            </div>
+
+            <div class="enrollment-cta-action">
+                <button class="whatsapp-btn enrollment-cta-btn" type="button">
+                    <i class="fab fa-whatsapp"></i>
+                    Fazer matrícula
+                </button>
+                <div class="enrollment-cta-badges" aria-label="Diferenciais da matrícula">
+                    <span><i class="fas fa-headset"></i> Atendimento rápido</span>
+                    <span><i class="fas fa-file-signature"></i> Processo orientado</span>
+                    <span><i class="fas fa-car-side"></i> Aulas com suporte</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="latest-info" aria-label="Informa&ccedil;&otilde;es importantes">
+        <div class="latest-info-content">
+            <div class="latest-info-heading">
+                <span>Informa&ccedil;&otilde;es finais</span>
+                <h1>Antes de come&ccedil;ar sua CNH, conte com um atendimento claro e acompanhado.</h1>
+            </div>
+            <div class="latest-info-grid">
+                <article>
+                    <i class="fas fa-clock"></i>
+                    <strong>Atendimento orientado</strong>
+                    <p>Respondemos suas d&uacute;vidas sobre etapas, documentos e pr&oacute;ximos passos para iniciar o processo.</p>
+                </article>
+                <article>
+                    <i class="fas fa-file-signature"></i>
+                    <strong>Matr&iacute;cula com suporte</strong>
+                    <p>Ajudamos voc&ecirc; a entender o melhor pacote e acompanhar cada fase da sua habilita&ccedil;&atilde;o.</p>
+                </article>
+                <article>
+                    <i class="fas fa-shield-halved"></i>
+                    <strong>Contato seguro</strong>
+                    <p>Nossos canais oficiais s&atilde;o usados apenas para atendimento, informa&ccedil;&otilde;es e confirma&ccedil;&otilde;es solicitadas.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="whatsapp-policy" aria-label="Pol&iacute;tica de atendimento via WhatsApp">
+        <div class="whatsapp-policy-content">
+            <div class="whatsapp-policy-title">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <span>Atendimento pelo WhatsApp</span>
+                    <h1>Privacidade e consentimento no contato com a Autoescola Evolu&ccedil;&atilde;o</h1>
+                    <p>Usamos o WhatsApp apenas para responder solicita&ccedil;&otilde;es, orientar sobre matr&iacute;cula, aulas, documentos, agendamentos e suporte relacionado ao processo de habilita&ccedil;&atilde;o.</p>
+                    <a class="whatsapp-policy-link" href="https://www.whatsapp.com/legal/privacy-policy?lang=pt" target="_blank" rel="noopener noreferrer">
+                        Ler a Pol&iacute;tica de Privacidade do WhatsApp
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="whatsapp-policy-panel">
+                <h2>Ao falar conosco pelo WhatsApp, voc&ecirc; concorda que:</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Podemos responder sua mensagem e usar seu n&uacute;mero para continuar o atendimento solicitado.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Seus dados s&atilde;o usados somente para atendimento da Autoescola Evolu&ccedil;&atilde;o e n&atilde;o s&atilde;o vendidos.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Podemos enviar informa&ccedil;&otilde;es sobre cursos, matr&iacute;cula, aulas e acompanhamento do seu processo.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Voc&ecirc; pode encerrar as mensagens a qualquer momento respondendo <strong>SAIR</strong> ou pedindo o fim do atendimento.</span>
+                    </li>
+                </ul>
+                <p class="whatsapp-policy-note">
+                    O WhatsApp tamb&eacute;m trata dados conforme suas pr&oacute;prias regras de privacidade. Para entender como a plataforma coleta, usa e compartilha informa&ccedil;&otilde;es, consulte a pol&iacute;tica oficial do WhatsApp.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-contact-strip" aria-label="Canais de contato">
+            <a class="footer-contact-card" href="https://api.whatsapp.com/send?phone=5519989132598&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20adquirir%20a%20minha%20CNH!">
+                <span class="footer-contact-icon"><i class="fab fa-whatsapp"></i></span>
+                <span>
+                    <strong>(19) 98913-2598</strong>
+                    <small>Fale com a gente</small>
+                </span>
+            </a>
+            <a class="footer-contact-card" href="https://instagram.com/autoescola.evolucao">
+                <span class="footer-contact-icon"><i class="fab fa-instagram"></i></span>
+                <span>
+                    <strong>@autoescola.evolucao</strong>
+                    <small>Acompanhe no Instagram</small>
+                </span>
+            </a>
+            <a class="footer-contact-card" href="https://www.google.com.br/maps/place/Auto+escola+Evolu%C3%A7%C3%A3o/@-22.8842371,-47.0352054,767m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94c8cf10a120af71:0xcc6958116545f336!8m2!3d-22.8842371!4d-47.0326305!16s%2Fg%2F11zhnkxrqr?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D">
+                <span class="footer-contact-icon"><i class="fas fa-location-dot"></i></span>
+                <span>
+                    <strong>Autoescola Evolu&ccedil;&atilde;o</strong>
+                    <small>Abra nossa localiza&ccedil;&atilde;o</small>
+                </span>
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <div id="one" class="footer-brand">
+                <img id="logoFim" src="./img/EvolucaoLogoScreen.png" alt="Autoescola Evolu&ccedil;&atilde;o">
+                <span class="footer-copyright">Todos os direitos reservados &copy; Autoescola Evolu&ccedil;&atilde;o 2026</span>
+            </div>
+            <div id="footer-icons" aria-label="Redes sociais da Autoescola Evolu&ccedil;&atilde;o">
+                <a href="https://api.whatsapp.com/send?phone=5519989132598&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20adquirir%20a%20minha%20CNH!" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com/autoescola.evolucao" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@autoescola.evolucao01" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.google.com.br/maps/place/Auto+escola+Evolu%C3%A7%C3%A3o/@-22.8842371,-47.0352054,767m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94c8cf10a120af71:0xcc6958116545f336!8m2!3d-22.8842371!4d-47.0326305!16s%2Fg%2F11zhnkxrqr?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" aria-label="Localiza&ccedil;&atilde;o">
+                    <i class="fas fa-location-dot"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
